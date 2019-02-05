@@ -329,15 +329,6 @@ a {
   text-decoration: none;
 }
 
-input:focus + .control-label {
-  background-color: purple;
-  color: red;
-}
-
-.controls > input {
-  float: right;
-}
-
 .btn {
   font-size: 16px;
   padding: 7px 20px 6px 20px;
