@@ -1,0 +1,85 @@
+.block-inputs{
+    .inputs{
+        margin-top: 35px;
+
+        .input-group{
+            margin-bottom: 25px;
+            position: relative;
+
+
+            &:focus-within{
+                &:before{
+                    opacity: 1;
+                }
+            }
+
+            &:before{
+                position: absolute;
+                content: '';
+                height: 1px;
+                background: #e1e1e1;
+                width: calc(100% - 32px);
+                transition: .3s;
+                left: 0;
+                bottom: 6px;
+                opacity: 0;
+                margin-left: 16px;
+                display: inline-block;
+            }
+
+            textarea{
+                min-height: 100px;
+                resize: none;
+            }
+
+            input[type="text"],textarea{
+                border: 0;
+                font-size: 16px;
+                display: block;
+                width: 100%;
+                background: #f7f7fa;
+                border-radius: 4px;
+                padding: 29px 15px 5px 15px;
+                transition: .3s;
+                color: #433f4c;
+                font-weight: bold;
+
+                &:hover{
+                    background: #ebebef;
+                }
+
+                &:focus{
+                    box-shadow: 0 0 0 0.2rem #7fd1ff;
+
+                    &:hover{
+                        background: #f7f7fa;
+                    }
+
+                    + label{
+                        color: #0097f6;
+                    }
+
+                }
+
+                &::placeholder{
+                    color: rgba(#000, .4);
+                    font-weight: normal;
+                }
+
+                &:-ms-input-placeholder {
+                    color: rgba(#000, .4);
+                    font-weight: normal;
+                }
+            }
+            label{
+                position: absolute;
+                color: #27252a;
+                font-size: 13px;
+                margin: 5px 0px 0px 16px;
+                display: block;
+                left: 0;
+                transition: .3s;
+            }
+        }
+    }
+}

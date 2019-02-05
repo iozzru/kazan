@@ -1,0 +1,122 @@
+@import "breakpoint";
+@import "susy";
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "footer";
+@import "block-inputs";
+@import "block-messages";
+
+*{
+    font-family: $font;
+    outline: none;
+}
+body{
+    background: #fff;
+    padding: 100px 0;
+}
+h6{
+    font-size: 18px;
+    font-weight: 500;
+    color: #2c2c2c;
+    margin-bottom: 15px;
+}
+p{
+    font-size: 14px;
+    line-height: 12pt;
+}
+a{
+    color: #2196f3;
+    text-decoration: none;
+}
+
+input:focus + .control-label
+{
+    background-color:purple;
+    color: red;
+}
+.controls > input
+{
+    float:right;
+}
+.btn{
+    font-size: 16px;
+    padding: 7px 20px 6px 20px;
+    background-color: #e4eaf0;
+    margin-right: 20px;
+    color: #232323;
+    min-width: 120px;
+
+    &:hover{
+        background-color: #c3c7cd;
+    }
+    &:not(:disabled):not(.disabled):active{
+        background-color: #c3c7cd;
+    }
+    &:focus{
+        box-shadow: 0 0 0 0.2rem #f1f4f7;
+    }
+
+
+
+    &.btn-primary{
+        background-color: #00a2fc;
+        border: 1px solid #00a2fc;
+        color: #fff;
+
+        &:hover{
+            background-color: #0091e2;
+        }
+        &:not(:disabled):not(.disabled):active{
+            background-color: #0080e5;
+        }
+    }
+}
+
+.alert{
+    &.alert-danger{
+        background: linear-gradient(to right, rgba(255,126,170,1) 0%,rgba(255,165,165,1) 100%);
+        border: 0;
+    }
+}
+
+.checkbox{
+    position: relative;
+
+    input{
+        display: none;
+
+        &:checked + label{
+            &:before{
+                content: '\e834';
+                color: #008eff;
+            }
+        }
+    }
+    label{
+        position: relative;
+        padding-left: 30px;
+        font-size: 14px;
+        color: #282828;
+        margin-bottom: 0;
+        line-height: 40pt;
+        cursor: pointer;
+
+        &:before{
+            position: absolute;
+            content: '\e835';
+            font-family: "Material Icons";
+            font-size: 24px;
+            left: 0;
+            color: #5e5e5f;
+            transition: .3s;
+        }
+    }
+
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .block-inputs .inputs .input-group input[type='text'], .block-inputs .inputs .input-group textarea {
+        padding: 29px 15px 10px 15px;
+    }
+}

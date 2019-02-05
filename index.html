@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Тестовое задание</title>
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="block-inputs">
+        <div class="container">
+            <h6>Основная информация</h6>
+            <p>
+                Sed ut perspiciatis, <a href="#">unde omnis iste</a> natus error sit voluptatem accusantium doloremque
+                laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut
+                fugit, sed quia consequuntur.
+            </p>
+
+            <div class="row inputs">
+                <div class="col-sm-12 col-md-4">
+                    <div class="input-group">
+                        <input type="text" id="input-1" placeholder="Введите название"/>
+                        <label for="input-1">Название группы</label>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="input-group">
+                        <input type="text" id="input-2" placeholder="Введите название"/>
+                        <label for="input-3">ФИО ответственного</label>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="input-group">
+                        <input type="text" id="input-3" placeholder="Введите название"/>
+                        <label for="input-3">Email для входа</label>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="input-group">
+                        <textarea id="input-4" placeholder="Введите краткое и емкое описание для рабочей группы"></textarea>
+                        <label for="input-4">Описание рабочей группы</label>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <button class="btn btn-primary">Сохранить</button>
+                    <button class="btn">Отмена</button>
+                </div>
+            </div>
+        </div>
+	</div>
+
+    <div class="block-messages">
+        <div class="container">
+            <h6>Управление уведомлениями</h6>
+
+            <div class="alert alert-danger" role="alert">
+                <div class="alert-icon">
+                    <i class="material-icons md-36">warning</i>
+                </div>
+                <div class="alert-message">
+                    <p>Внимание!</p>
+                    <span>
+                        Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem.
+                    </span>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="item active">
+                            <div class="cards-title">
+                                <div class="img">
+                                    <img src="images/icon-1.png" alt=""/>
+                                </div>
+                                <p>Telegram</p>
+                            </div>
+
+                            <div class="cards-body">
+                                <button class="btn">Отключить аккаунт</button>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="checkbox-telegram" checked/>
+                                    <label for="checkbox-telegram">Только служебные</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="item">
+                            <div class="cards-title">
+                                <div class="img">
+                                    <img src="images/icon-2.png" alt=""/>
+                                </div>
+                                <p>ICQ</p>
+                            </div>
+
+                            <div class="cards-body">
+                                <ol>
+                                    <li class="link">Скопируйте команду авторизации <a href="#"><i class="material-icons md-18">content_copy</i></a></li>
+                                    <li class="link">Перейдите в чат и отправьте команду боту <a href="#"><i class="material-icons md-18">content_copy</i></a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="item">
+                            <div class="cards-title">
+                                <div class="img">
+                                    <img src="images/icon-3.png" alt=""/>
+                                </div>
+                                <p>Skype</p>
+                            </div>
+
+                            <div class="cards-body">
+                                <ol>
+                                    <li class="link">Скопируйте команду авторизации <a href="#"><i class="material-icons md-18">content_copy</i></a></li>
+                                    <li class="link">Перейдите в чат и отправьте команду боту <a href="#"><i class="material-icons md-18">content_copy</i></a></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="item active">
+                            <div class="cards-title">
+                                <div class="img">
+                                    <img src="images/icon-4.png" alt=""/>
+                                </div>
+                                <p>Slack</p>
+                            </div>
+
+                            <div class="cards-body">
+                                <button class="btn">Отключить аккаунт</button>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="checkbox-slack"/>
+                                    <label for="checkbox-slack">Только служебные</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
